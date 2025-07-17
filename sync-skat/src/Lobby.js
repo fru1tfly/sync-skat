@@ -225,7 +225,6 @@ export const Lobby = (props) => {
                     <MediaQuery query="(max-width: 500px)">
                         {renderUserName(u, 24)}
                     </MediaQuery>
-                    {u.status}
                 </div>
             );
         });
