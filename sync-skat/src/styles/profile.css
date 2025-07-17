@@ -1,0 +1,162 @@
+.profile-info-container {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+    position: relative;
+}
+
+.big-profile-pic {
+	display: flex;
+	box-sizing: content-box;
+	width: 199px;
+	position: relative;
+}
+
+.profile-pic-edit-hover-btn {
+	position: absolute;
+	font-size: 48px;
+	cursor: pointer;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+}
+
+.user-info-dropdown-item {
+	padding: 2px 6px;
+	user-select: none;
+	cursor: pointer;
+	display: flex;
+	font-size: 20px;
+	text-decoration: none;
+	color: var(--border-primary);
+}
+
+.info-card {
+	background-color: #7dab94;
+	padding: 20px;
+	flex-grow: 1;
+}
+
+.info-card-body {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.image-update-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+}
+
+.custom-file-upload {
+	padding: 6px 24px;
+	cursor: pointer;
+	background-color: #E97451;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+    font-family: Fredoka;
+}
+
+.profile-pic-upload-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.profile-pic-help-text {
+	padding: 10px 40px;
+	text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .profile-info-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .info-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-pic-edit-hover-btn {
+        font-size: 24px;
+        color: #fff;
+        background-color: var(--border-primary);
+        width: 60px;
+        height: 60px;
+        top: 180px;
+        border-radius: 50%;
+        z-index: 100;
+    }
+
+    .user-info-dropdown-item {
+        padding: 10px 15px;
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        align-items: center;
+		font-weight: 500;
+		text-shadow: 0px 2px 0px #444444;
+		background-color: #345b4b;
+		flex-grow: 1;
+		justify-content: center;
+		color:#e8fcde;
+    }
+
+	.mobile-modal-icon {
+		font-size: 18px!important;
+	}
+
+	.user-info-dropdown-item > .mobile-modal-icon {
+		width: 20px;
+		margin-top:3px;
+	}
+
+	.user-info-double {
+		display: flex;
+		gap: 10px;
+	}
+
+	.user-info-double > .user-info-dropdown-item {
+		text-align: left;
+	}
+
+	.play-mobile-img {
+		width: 280px;
+	}
+
+	.play-mobile-text {
+		color: var(--border-primary);
+		font-weight: 700;
+		position: absolute;
+		background-color: #d99761;
+		padding: 5px 25px;
+		top: 50%;
+		transform: translate(0, -20%);
+	}
+
+	.play-mobile-btn {
+		font-size: 32px;
+		margin-bottom: 10px;
+		flex-direction: column;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+}

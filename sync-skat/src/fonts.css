@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Fredoka';
+    src: local('Fredoka'), url(./assets/Fredoka.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), url(./assets/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: 'Source Serif';
+    src: local('Source Serif'), url(./assets/SourceSerif.ttf);
+}

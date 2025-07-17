@@ -1,0 +1,145 @@
+.scoresheet-container {
+    overflow-x: auto;
+    max-height: calc(100% - 70px);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid var(--border-primary);
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 20px;
+    direction: rtl;
+}
+
+td, .scoresheet-header {
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px solid var(--border-primary);
+    box-sizing: border-box;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+    padding: 3px;
+}
+
+.center-content::-webkit-scrollbar {
+    display: none;
+}
+
+.center-content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sideways {
+    writing-mode: sideways-lr;
+    text-align: left;
+}
+
+.flatten {
+    vertical-align: bottom;
+}
+
+.scoresheet-header-narrow {
+    width: 25px;
+    min-width: 25px;
+    max-width: 25px;
+}
+
+.scoresheet-header-player {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.scoresheet-header-seminarrow {
+    width: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    vertical-align: middle;
+}
+
+.scoresheet-header-overbid {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.scoresheet-header-results {
+    width: 330px;
+    min-width: 330px;
+    max-width: 330px;
+}
+
+
+.first-columns {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.dealer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.total-row > td {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+thead tr {
+    display: block;
+}
+
+.center-content {
+    overflow-y: auto;
+}
+
+tr:first-child th, .center-content tr:first-child td {
+border-top: none;
+}
+
+tr:last-child td {
+border-bottom: none;
+}
+
+tr td:first-child, tr th:first-child {
+border-left: none;
+}
+
+tr td:last-child, tr th:last-child {
+border-right: none;
+}
+
+.player-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table-component {
+    direction: ltr;
+}
+
+th, td {
+    pointer-events: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 900px), screen and (max-height: 400px) {
+    .scoresheet-container {
+        width: calc(100% - 24px);
+        max-height: calc(100% - 60px);
+        bottom: 10px;
+    }
+}
+
+td {
+    font-size: 16px;
+}

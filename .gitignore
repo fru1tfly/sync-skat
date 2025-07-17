@@ -1,0 +1,9 @@
+/sync-skat/node_modules
+/server/node_modules
+
+/server/.env
+/sync-skat/build
+
+/sync-skat/syncskatkeypair.pem
+
+.DS_Store

@@ -1,0 +1,479 @@
+.lobby {
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #AFE1AF;
+    align-items: stretch!important;
+}
+
+.lobby-list-container {
+    background-color: #e7fff1;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 114px);
+}
+
+.lobby-list-body {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.lobby-list-title {
+    align-items: center;
+    justify-content: center;
+}
+
+.lobby-list-item {
+    padding: 5px 15px;
+    font-size: 18px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 2px solid var(--border-primary);
+    align-items: center;
+}
+
+.lobby-list-item:nth-child(even) {
+    background-color: #c3f0d6;
+}
+
+.llc-narrow {
+}
+
+.lobby-center-section {
+    flex-grow: 1;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #a1dcb3;
+}
+
+.chat-bar {
+    background-color: #c3f0d6;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-top: 3px solid var(--border-primary);
+}
+
+.chat-bar input {
+    padding: 4px 7px;
+    font-size: 18px;
+    outline: none;
+}
+
+.send-btn {
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: #a1dcb3;
+}
+
+.lobby-center-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.llc-header {
+    font-size: 24px;
+    background-color: #a1dcb3;
+    border-bottom: 3px solid var(--border-primary);
+    padding: 5px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lobby-icon {
+    margin-right: 10px;
+}
+
+.lobby-table-header {
+    font-size: 18px!important;
+    
+    padding: 5px 15px;
+}
+
+.lobby-table-xs {
+    flex: 1 1 2%;
+    text-align: center;
+}
+
+.lobby-table-s {
+    flex: 3 0 5%;
+    text-align: center;
+}
+
+.lobby-table-m {
+    flex: 9 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.lobby-table-l {
+    flex: 12 0 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lobby-center-section > .lobby-list-container > 
+.lobby-list-body > .lobby-list-item:last-child {
+    border-bottom: none;
+}
+
+.lobby-list-none-message {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.chat-body {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.chat-text {
+    font-family: 'Open Sans';
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.fill-page {
+    max-width: 1920px;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-selected {
+    border-bottom: 3px solid var(--border-primary);
+    font-size: 20px;
+    padding: 8px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-area {
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #e7fff1;
+}
+
+.dropdown-option {
+    padding: 6px 10px;
+    border-bottom: 3px solid var(--border-primary);
+}
+
+.dropdown-option-selected {
+    background-color: #c3f0d6;
+}
+
+.desktop-chat-window {
+    display: flex;
+}
+
+.desktop-chat-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid var(--border-primary);
+}
+
+.lobby-narrow-title {
+    padding: 10px 15px;
+}
+
+.table-card-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.table-card {
+    height: 200px;
+    position: relative;
+    background-color: #fcfbce;
+    flex: 0 0 220px;
+    box-sizing: border-box;
+}
+
+.table-leg {
+    background-color: rgb(160, 141, 118);
+    width: 12px;
+    height: 80px;
+    border-right: 6px solid rgb(91, 64, 35);
+    position: absolute;
+}
+
+.table-leg-left {
+    background-color: rgb(160, 141, 118);
+    width: 12px;
+    height: 80px;
+    border-right: none;
+    border-left: 6px solid rgb(91, 64, 35);
+    position: absolute;
+}
+
+.table-slot {
+    position: absolute;
+}
+
+.table-slot-open {
+    border: 4px dashed var(--border-primary);
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.table-card-table {
+    background-color: rgb(160, 141, 118);
+    height: 90px;
+    width: 75%;
+    position: absolute;
+    top: 38%;
+    left: 12.5%;
+    border-radius: 50%;
+}
+
+.table-card-table-middle {
+    width: 75%;
+    position: absolute;
+    top: calc(38% + 45px);
+    left: 12.5%;
+    height: 5%;
+    
+    background-color: rgb(91, 64, 35);
+}
+
+.table-card-table-bottom {
+    background-color: rgb(91, 64, 35);
+    top: 43%;
+}
+
+.table-key-icon {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-text {
+    font-size: 12px;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.hands-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.hand-count {
+    display: flex;
+}
+
+.hand-count-table {
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    transform: translate(-50%, 0);
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+}
+
+.hand-count-event {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 0px 5px;
+    flex-shrink: 0;
+    top: -1px;
+}
+
+.hand-count-text {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    color: #483209;
+}
+
+.event-detail {
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+}
+
+.event-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 3px;
+}
+
+.event-name {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    width: 100%;
+}
+
+.event-info {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-icon {
+    font-size: 14px;
+}
+
+.event-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    word-wrap: break-word;
+}
+
+.event-action-row {
+    display: flex;
+    gap: 15px;
+}
+
+.event-pill {
+    background-color: #e7fff1;
+    padding: 4px 10px;
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    user-select: none;
+}
+
+@media screen and (min-width: 1201px) {
+    .sub-menu-title {
+        padding: 7px 0px;
+        justify-content: center;
+        font-size: 22px!important;
+        background-color: #c3f0d6;
+    }
+
+    .table-card-container {
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
+
+    .llc-narrow {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .lobby-table-modal {
+        width: 60vw;
+        min-height: 30vh;
+        max-height: 90vh;
+        position: relative;
+        top: 8vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+
+    .llc-narrow {
+        flex-grow: 1;
+    }
+
+    .sub-menu-title {
+        font-size: 22px;
+    }
+
+    .desktop-chat-body {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .lobby {
+        padding: 5px;
+    }
+
+    .chat-bar input {
+        font-size: 15px;
+    }
+
+    .event-icon-text {
+        max-width: 120px;
+
+    }
+
+    .lobby-center-section {
+        padding: 15px;
+    }
+
+    .lobby-table-modal {
+        width: 90vw;
+        height: 94vh;
+        position: relative;
+        top: 3vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+
+    .lobby-list-title {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .chat-text {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    .send-btn {
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+
+    .chat-message {
+        font-size:14px;
+    }
+
+    .table-card-container {
+        overflow-x:auto;
+    }
+
+    .lobby-list-none-message {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .table-card {
+        flex: 0 0 60vw;
+    }
+}

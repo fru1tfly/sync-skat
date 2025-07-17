@@ -1,0 +1,181 @@
+.player-info-pill {
+    position: fixed;
+	width: 240px;
+	background-color: #ccc;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	box-sizing: border-box;
+	z-index: 10;
+	user-select: none;
+}
+
+.player-info-container {
+	flex-grow: 1;
+}
+
+.player-username {
+	font-size: 24px;
+	flex: 1 0 50%;
+}
+
+.player-bid-info {
+	display: flex;
+	justify-content: space-between;
+	height: 20px;
+    font-size: 14px;
+}
+
+.bid-menu {
+	background-color: #E97451;
+	padding: 6px 8px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	display: flex;
+    flex-direction: column;
+	gap: 8px;
+	align-items: center;
+	z-index: 1000;
+}
+
+@media screen and (min-aspect-ratio: 1) {
+	.bid-menu {
+		left: calc(calc(100vw - 200px) * 0.5 + 200px);
+	}
+}
+
+@media screen and (max-aspect-ratio: 1) {
+	.bid-menu {
+		top: calc(calc(100vh - 200px) * 0.5 + 200px);
+	}
+}
+
+.bid-input {
+	font-size: 30px;
+	background-color: #FAD5A5;
+	padding: 2px 10px;
+	width: 70px;
+	text-align: center;
+	user-select: none;
+	pointer-events: none;
+	font-weight: 700;
+}
+
+.bid-adjust-button {
+	background-color: #8B4000;
+	font-size: 15px;
+	padding: 5px;
+	color: #2B1100;
+}
+
+.bid-adjust-button:first-child {
+	border-radius: 10px 0px 0px 10px;
+	border-right: 0px;
+	padding-left: 7px;
+}
+
+.bid-adjust-button:last-child {
+	border-radius: 0px 10px 10px 0px;
+	border-left: 0px;
+	padding-right: 7px;
+}
+
+.bid-input-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.bid-action-btn {
+	white-space: nowrap;
+	padding: 8px 14px;
+	border-radius: 8px;
+	font-size: 22px;
+	font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+}
+
+.bid-btn {
+	background-color: #AFE1AF;
+	color: #023020;
+}
+
+.pass-btn {
+	background-color: #AA4A44;
+	color: #4A0404;
+}
+
+.bid-menu-text {
+	font-size: 24px;
+	white-space: nowrap;
+	padding: 0px 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+    user-select: none;
+}
+
+.accept-bid-value {
+	background-color: #FAD5A5;
+	padding: 5px 10px;
+	font-weight: 900;
+}
+
+
+.player-game-icon {
+	position: absolute;
+	top: -4px;
+	right: 100%;
+	padding: 2px 6px;
+	height: 84px;
+	width: 80px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	background-color: #f1b357;
+    justify-content: center;
+}
+
+@media screen and (max-height: 600px), screen and (max-width: 900px) {
+    .player-info-pill {
+        flex-direction: column;
+        width: 130px;
+        align-items: stretch;
+        gap: 4px;
+    }
+
+    .player-username {
+        font-size: 18px;
+        width: 100%;
+        text-overflow: ellipsis;
+        word-wrap: nowrap;
+        text-align: center;
+    }
+
+    .spacer {
+        height: 2px;
+    }
+
+    .mobile-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .player-info-top-menu {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+	.player-game-icon {
+		position: fixed;
+		top: 10px;
+		left: 10px;
+	}
+}   
